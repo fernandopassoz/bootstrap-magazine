@@ -86,7 +86,7 @@
 	</div>
 	<div id="copyright" class="container">
 		<?php echo sprintf(__('%1$s %2$s %3$s. Todos os direitor reservados.', 'Onlagos'), '&copy;', date('Y'), esc_html(get_bloginfo('name')));
-		echo sprintf(__(' Theme By: %1$s.', 'Splouz'), '<a href="#">Splouz</a>');
+		/* echo sprintf(__(' Theme By: %1$s.', 'Splouz'), '<a href="#">Splouz</a>'); */
  ?>
 	</div>
 </footer>
