@@ -85,39 +85,6 @@ p wp_nav_menu(array('theme_location' => 'main-menu')); ?>
 	<nav class="navbar navbar-default" role="navigation">
 
 		<div class="menu-principal">
-			<!-- <ul class="nav navbar-nav">
-				<li><a href="#">PRINCIPAL</a></li>
-				<li><a href="#">REGIÃO</a></li>
-				<li><a href="#">ESPORTES</a></li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle="dropdown">SEÇÕES<b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">MULHER</a></li>
-						<li><a href="#">TECNOLOGIA</a></li>
-						<li><a href="#">EMPREGO</a></li>
-						<li><a href="#">COLUNAS E BLOGS</a></li>
-						</ul>
-				</li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle"
-					data-toggle="dropdown">ENTRETENIMENTO<b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">CURIOSIDADES</a></li>
-						<li><a href="#">DOCE FESTA</a></li>
-
-					</ul>
-				</li>
-				
-			</ul> -->
-			
-			<!--<div class="collapse navbar-collapse navbar-ex1-collapse">
-				<form class="navbar-form navbar-right" role="search">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Search"
-							size="14">
-					</div>
-					<button type="submit" class="btn btn-default">BUSCAR</button>
-				</form>
-			</div> -->
 			<?php
 			    wp_nav_menu( array(
 			        'menu'       => 'primary',
@@ -129,9 +96,8 @@ p wp_nav_menu(array('theme_location' => 'main-menu')); ?>
 			        'walker' => new wp_bootstrap_navwalker())
 			    );        
 			?>
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<!--<div class="collapse navbar-collapse navbar-ex1-collapse"> -->
 				<ul class="nav navbar-nav navbar-right pad-pequeno">
-					<li><a href="#">ANUNCIE</a></li>
 					<li><a href="#"><img alt=""
 							src="<?php echo content_url(); ?>/themes/bootstrap-magazine/images/icons/facebook-color.png" height="20px"></a></li>
 					<li><a href="#"><img alt=""
@@ -142,7 +108,7 @@ p wp_nav_menu(array('theme_location' => 'main-menu')); ?>
 							src="<?php echo content_url(); ?>/themes/bootstrap-magazine/images/icons/youtube-color.png" height="20px"></a></li>
 
 				</ul>
-			</div>
+			<!-- </div> -->
 		</div>
 
 	</nav>
