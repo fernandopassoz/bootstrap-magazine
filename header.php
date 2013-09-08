@@ -21,24 +21,12 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 <?php wp_head(); ?>
 </head>
+
 <body <?php body_class(); ?>>
 <script src="<?php echo content_url(); ?>/themes/bootstrap-magazine/js/jquery-2.0.3.min.js"></script>
 <script src="<?php echo content_url(); ?>/themes/bootstrap-magazine/js/bootstrap.min.js"></script>
 <div id="wrapper" class="hfeed">
-<header id="header" role="banner">
-
-<!-- /*
-<section id="branding">
-<div id="site-title"><?php
-if (!is_singular()) {echo '<h1>';
-}
- ?><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php esc_attr_e(get_bloginfo('name'), 'blankslate'); ?>" rel="home"><?php echo esc_html(get_bloginfo('name')); ?></a><?php
-if (!is_singular()) {echo '</h1>';
-}
- ?></div>
-<div id="site-description"><?php bloginfo('description'); ?></div>
-</section>
- */ -->
+	<header id="header" role="banner">
 
  		<div id="header" class="container">
 			<div class="row">
@@ -53,66 +41,45 @@ if (!is_singular()) {echo '</h1>';
 					<div id="row">
 
 					<div class="form-group col-md-7">
-						<input type="text" class="form-control" placeholder="Search"
+						<input type="text" class="form-control" placeholder="O que você quer buscar?"
 							size="14">
 					</div>
-					<button type="submit" class="btn btn-default col-md-5">BUSCAR</button>
+					<button type="submit" class="btn btn-default col-md-5">PROCURAR</button>
 					</div>
 				</form>
 			</div>
 		</div>
 
 
-
-<!--
-
-<nav id="menu" role="navigation" class="navbar navbar-default">
-<!-- <div id="search" class="menu-principal">
-<?php get_search_form(); ?>
-</div>
-<div class="menu-principal">
-p wp_nav_menu(array('theme_location' => 'main-menu')); ?>
-	</div>
-</nav>
--->
-
-<div class="bar">
-
-	<div class="container">
-		
-
-
-	<nav class="navbar navbar-default" role="navigation">
-
-		<div class="menu-principal">
-			<?php
-			    wp_nav_menu( array(
-			        'menu'       => 'primary',
-			        'theme_location' => 'primary',
-			        'depth'      => 2,
-			        'container'  => false,
-			        'menu_class' => 'nav navbar-nav',
-			        'fallback_cb' => 'wp_page_menu',
-			        'walker' => new wp_bootstrap_navwalker())
-			    );        
-			?>
-			<!--<div class="collapse navbar-collapse navbar-ex1-collapse"> -->
-				<ul class="nav navbar-nav navbar-right pad-pequeno">
-					<li><a href="#"><img alt=""
-							src="<?php echo content_url(); ?>/themes/bootstrap-magazine/images/icons/facebook-color.png" height="20px"></a></li>
-					<li><a href="#"><img alt=""
-							src="<?php echo content_url(); ?>/themes/bootstrap-magazine/images/icons/twitter-color.png" height="20px"></a></li>
-					<li><a href="#"><img alt=""
-							src="<?php echo content_url(); ?>/themes/bootstrap-magazine/images/icons/pinterest-color.png" height="20px"></a></li>
-					<li><a href="#"><img alt=""
-							src="<?php echo content_url(); ?>/themes/bootstrap-magazine/images/icons/youtube-color.png" height="20px"></a></li>
-
-				</ul>
-			<!-- </div> -->
+		<!-- <div class="linha"></div> -->
+		<div class="bar">
+			
+			<div class="container">
+					
+				<nav class="navbar navbar-default" role="navigation">
+			
+					<div class="menu-principal">
+						<?php
+						wp_nav_menu(array('menu' => 'primary', 'theme_location' => 'primary', 'depth' => 2, 'container' => false, 'menu_class' => 'nav navbar-nav', 'fallback_cb' => 'wp_page_menu', 'walker' => new wp_bootstrap_navwalker()));
+						?>
+						<!--<div class="collapse navbar-collapse navbar-ex1-collapse"> -->
+							<ul class="nav navbar-nav navbar-right pad-pequeno">
+								<li><a href="#"><img alt=""
+										src="<?php echo content_url(); ?>/themes/bootstrap-magazine/images/icons/facebook-color.png" height="20px"></a></li>
+								<li><a href="#"><img alt=""
+										src="<?php echo content_url(); ?>/themes/bootstrap-magazine/images/icons/twitter-color.png" height="20px"></a></li>
+								<li><a href="#"><img alt=""
+										src="<?php echo content_url(); ?>/themes/bootstrap-magazine/images/icons/pinterest-color.png" height="20px"></a></li>
+								<li><a href="#"><img alt=""
+										src="<?php echo content_url(); ?>/themes/bootstrap-magazine/images/icons/youtube-color.png" height="20px"></a></li>
+			
+							</ul>
+						<!-- </div> -->
+					</div>
+			
+				</nav>
+			</div>
 		</div>
-
-	</nav>
-	</div>
-	</div>
-</header>
+		<div class="linha"></div>
+	</header>
 <div id="container" class="container">

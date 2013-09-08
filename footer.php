@@ -1,4 +1,4 @@
-
+<div class="linha"></div>
 <footer id="footer" role="contentinfo">
 	<div class="container">
 		<div class="row">
@@ -90,7 +90,7 @@
  ?>
 	</div>
 </footer>
-
+<div class="linha"></div>
 <?php wp_footer(); ?>
 <script type="text/javascript" src="<?php echo content_url(); ?>/themes/bootstrap-magazine/js/holder-ipsum.js"></script>
 </body>
